@@ -8,6 +8,7 @@ const sendEmail = async (email, subject, html) => {
         user: process.env.USER,
         pass: process.env.PASS,
       },
+      authMethod: "PLAIN",
     });
 
     await transporter.sendMail({
