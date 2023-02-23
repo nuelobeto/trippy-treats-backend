@@ -40,7 +40,7 @@ const register = asyncHandler(async (req, res) => {
   const message = `
   <h3>Welcome to Trippy-treats.</h3>
   <p>Please click the link below to verify your email.</p>
-  <a href="${process.env.BASE_URL}/verify/${user.id}/${token.token}?redirect=${process.env.FRONTEND_URL}">verify email</a>
+  <a href="${process.env.BASE_URL}/verify/${user.id}/${token.token}?redirect=${process.env.FRONTEND_URL}/verify/${user.id}/${token.token}">verify email</a>
   `;
 
   await sendEmail(user.email, "verify email", message);
