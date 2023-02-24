@@ -23,5 +23,36 @@ example payload: {
     password: nwibyephd2
     phone: 09012345678
 }
-requires token: true
+requires token: false
+```
+
+```javaScript
+### Login
+
+endpoint: ${BASE_URL}/login
+example payload: {
+    email: nuelobeto@gmail.com
+    password: nwibyephd2
+}
+requires token: false
+```
+
+```javaScript
+### Forgot Password
+
+endpoint: ${BASE_URL}/forgot-password
+example payload: {
+    email: nuelobeto@gmail.com
+}
+requires token: false
+```
+
+```javaScript
+### Update Password
+
+endpoint: ${BASE_URL}/update-password/:userId
+example payload: {
+    password: new_password
+}
+requires token: false
 ```
