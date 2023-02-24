@@ -7,9 +7,9 @@ const crypto = require("crypto");
 const sendEmail = require("../middlewares/email");
 
 const register = asyncHandler(async (req, res) => {
-  const { name, email, password } = req.body;
+  const { name, email, password, phone } = req.body;
 
-  if (!name || !email || !password) {
+  if (!name || !email || !password || !phone) {
     res.status(400);
     throw new Error("Please add all fields");
   }
@@ -30,6 +30,7 @@ const register = asyncHandler(async (req, res) => {
     name,
     email,
     password: hashedPassword,
+    phone,
   });
 
   const token = await Token.create({
