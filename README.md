@@ -1,7 +1,5 @@
 # Trippy Treats Backend
 
----
-
 ## Table of Contents
 
 1. [Base Url](#base-url)
