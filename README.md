@@ -13,7 +13,7 @@ https://proud-deer-kilt.cyclic.app
 
 ## Auth APIs
 
-```
+```javaScript
 ### Regiter
 
 endpoint: ${BASE_URL}/register
