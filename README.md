@@ -17,6 +17,7 @@ https://proud-deer-kilt.cyclic.app
 ### Regiter
 
 endpoint: ${BASE_URL}/register
+method: POST
 example payload: {
     name: nuel,
     email: nuelobeto@gmail.com
@@ -30,6 +31,7 @@ requires token: false
 ### Login
 
 endpoint: ${BASE_URL}/login
+method: POST
 example payload: {
     email: nuelobeto@gmail.com
     password: nwibyephd2
@@ -41,6 +43,7 @@ requires token: false
 ### Forgot Password
 
 endpoint: ${BASE_URL}/forgot-password
+method: POST
 example payload: {
     email: nuelobeto@gmail.com
 }
@@ -51,6 +54,7 @@ requires token: false
 ### Update Password
 
 endpoint: ${BASE_URL}/update-password/:userId
+method: PUT
 example payload: {
     password: new_password
 }
